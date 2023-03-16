@@ -1,0 +1,27 @@
+Create your own store! Your store should sell one type of things, like clothing or bikes, 
+whatever you want your store to specialize in. You should have a table for all the items in your store, 
+and at least 5 columns for the kind of data you think you'd need to store. You should sell at least 15 items, 
+and use select statements to order your items by price and show at least one statistic about the items. 
+
+
+
+CREATE TABLE jewelry (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+
+insert into jewelry values(1, 'Rose Ring', 50);
+insert into jewelry values(2, 'choker necklace', 90);
+insert into jewelry values(3, 'diamond ring', 500);
+insert into jewelry values(4, 'bracelet', 67);
+insert into jewelry values(5, 'enamel pig', 250);
+insert into jewelry values(6, 'chicken ring', 300);
+insert into jewelry values(7, 'studs', 20);
+insert into jewelry values(8, 'potato necklace', 788);
+insert into jewelry values(9, 'tuber ring', 890);
+insert into jewelry values(10, 'charm bracelet', 100);
+insert into jewelry values(11, 'extra charm', 30);
+insert into jewelry values(12, 'Ring number 12', 75);
+insert into jewelry values(13, 'Necklace 13', 85);
+insert into jewelry values(14, 'another ring', 838);
+insert into jewelry values(15, 'rinnnger', 74);
+
+Diplay the database by price showing items over 100.00 dollars
+select * from jewelry where price >100 order by price
